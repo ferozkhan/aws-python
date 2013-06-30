@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title> AWS Interface </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://s3-ap-southeast-1.amazonaws.com/cdn-sg/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://s3-ap-southeast-1.amazonaws.com/cdn-sg/bootstrap/css/bootstrap-responsive.min.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="raw-fluid">
+        <div class="span2">
+            <table class="table table-bordered table-striped" ng-controller="ec2State">
+                <tr>
+                    <td>Running</td>
+                    <td>{{ running_instances }}</td>
+                </tr>
+                <tr>
+                    <td>Pending</td>
+                    <td>{{ pending_instances }}</td>
+                </tr>
+                <tr>
+                    <td>Shutting Down</td>
+                    <td>{{ shutting_down_instances }}</td>
+                </tr>
+                <tr>
+                    <td>Terminated</td>
+                    <td>{{ terminated_instances }}</td>
+                </tr>
+                <tr>
+                    <td>Stopping</td>
+                    <td>{{ stopping_instances }}</td>
+                </tr>
+                <tr>
+                    <td>Stopped</td>
+                    <td>{{ stopped_instances }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="span10">
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+<script type="text/javascript" src="https://s3-ap-southeast-1.amazonaws.com/cdn-sg/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/controllers.js"></script
+
+</body>
+</html>
